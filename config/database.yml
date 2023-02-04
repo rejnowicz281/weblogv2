@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: weblogv2_production
   username: weblogv2
   password: <%= ENV["WEBLOGV2_DATABASE_PASSWORD"] %>
